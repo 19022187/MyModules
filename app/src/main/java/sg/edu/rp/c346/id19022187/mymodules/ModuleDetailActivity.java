@@ -37,11 +37,11 @@ public class ModuleDetailActivity extends AppCompatActivity {
         String venue = intentReceived.getStringExtra("ModuleCode");
 
         tvCode.setText("Module Code: " + modCode);
-        tvName.setText("Module Code: " + modName);
-        tvYear.setText("Module Code: " + acYear);
-        tvSem.setText("Module Code: " + semester);
-        tvCredit.setText("Module Code: " + modCredit);
-        tvVenue.setText("Module Code: " + venue);
+        tvName.setText("Module Name: " + modName);
+        tvYear.setText("Academic Year: " + acYear);
+        tvSem.setText("Semester: " + semester);
+        tvCredit.setText("Module Credit: " + modCredit);
+        tvVenue.setText("Venue: " + venue);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
