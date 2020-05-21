@@ -28,12 +28,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, ModuleDetailActivity.class);
                 i.putExtra("code", "C346");
                 i.putExtra("name", "Android Programming");
-                i.putExtra("year", "C346");
-                i.putExtra("sem", "C346");
-                i.putExtra("modCre", "C346");
-                i.putExtra("venue", "C346");
-
-
+                i.putExtra("year", 2020);
+                i.putExtra("sem", 1);
+                i.putExtra("modCre", 4);
+                i.putExtra("venue", "W67G");
+                startActivity(i);
             }
         });
 
@@ -41,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, ModuleDetailActivity.class);
+                i.putExtra("code", "C349");
+                i.putExtra("name", "Ipad Programming");
+                i.putExtra("year", 2021);
+                i.putExtra("sem", 1);
+                i.putExtra("modCre", 4);
+                i.putExtra("venue", "W67J");
+                startActivity(i);
             }
         });
     }

@@ -29,12 +29,12 @@ public class ModuleDetailActivity extends AppCompatActivity {
 
         Intent intentReceived = getIntent();
 
-        String modCode = intentReceived.getStringExtra("ModuleCode");
-        String modName = intentReceived.getStringExtra("ModuleName");
-        int acYear = intentReceived.getIntExtra("AcademicYear", 0);
-        int semester = intentReceived.getIntExtra("Semester", 0);
-        int modCredit = intentReceived.getIntExtra("ModuleCredit", 0);
-        String venue = intentReceived.getStringExtra("ModuleCode");
+        String modCode = intentReceived.getStringExtra("code");
+        String modName = intentReceived.getStringExtra("name");
+        int acYear = intentReceived.getIntExtra("year", 0);
+        int semester = intentReceived.getIntExtra("sem", 0);
+        int modCredit = intentReceived.getIntExtra("modCre", 0);
+        String venue = intentReceived.getStringExtra("venue");
 
         tvCode.setText("Module Code: " + modCode);
         tvName.setText("Module Name: " + modName);
